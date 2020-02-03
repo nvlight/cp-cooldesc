@@ -1,6 +1,6 @@
 <!-- Footer (begin) -->
 <footer class="center-bl clear">
-    <div class="copyright">© 2017-2019 Cooldesk — Умный стол с регулируемой высотой</div>
+    <div class="copyright">© 2017-<?=date('Y')?> Cooldesk — Умный стол с регулируемой высотой</div>
     <nav>
         <ul class="clear">
             <li><a href="payment-options.php">Способы оплаты</a></li>
