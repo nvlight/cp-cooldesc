@@ -49,7 +49,7 @@ gulp.task('scripts', function() {
 		'app/js/_custom.js', // Custom scripts. Always at the end
 		])
 	.pipe(concat('scripts.min.js'))
-	.pipe(uglify()) // Minify js (opt.)
+	//.pipe(uglify()) // Minify js (opt.)
 	.pipe(gulp.dest('app/js'))
 	.pipe(browserSync.reload({ stream: true }))
 });
@@ -59,6 +59,7 @@ var quality = 95; // Responsive images quality
 
 // Produce @1x images
 gulp.task('img-responsive-1x', async function() {
+	gulp.src('app/img/_src/**/*.svg').pipe(gulp.dest('app/img/@1x/'));
 	return gulp.src('app/img/_src/**/*.{png,jpg,jpeg,webp,raw}')
 		.pipe(newer('app/img/@1x'))
 		.pipe(responsive({
@@ -69,6 +70,7 @@ gulp.task('img-responsive-1x', async function() {
 });
 // Produce @2x images
 gulp.task('img-responsive-2x', async function() {
+	gulp.src('app/img/_src/**/*.svg').pipe(gulp.dest('app/img/@1x/'));
 	return gulp.src('app/img/_src/**/*.{png,jpg,jpeg,webp,raw}')
 		.pipe(newer('app/img/@2x'))
 		.pipe(responsive({
