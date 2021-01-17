@@ -14,12 +14,13 @@ var gulp         	 = require('gulp'),
 // Local Server
 gulp.task('browser-sync', function() {
 	browserSync.init({
-		server: {
-			baseDir: 'app'
-		},
+		//server: {
+		//	baseDir: 'app'
+		//},
 		notify: false,
 		// online: false, // Work offline without internet connection
 		// tunnel: true, tunnel: 'projectname', // Demonstration page: http://projectname.localtunnel.me
+		proxy: "cooldesc:86",
 	})
 });
 function bsReload(done) { browserSync.reload(); done(); };

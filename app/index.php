@@ -376,8 +376,8 @@ require 'pages/head.php';
                     <input class="btn fl-r" type="submit" value="Заказать">
                 </div>
                 <div class="view-result">
-                    <img class="img-abs" id="frame_image" src="img/@1x/black-from-angle.png" alt="" title="">
-                    <img class="img-abs" id="desk_image" src="img/@1x/oak-panel.png" alt="" title="">
+                    <img class="img-abs" id="frame_image" src="img/@2x/black-from-angle.png" alt="" title="">
+                    <img class="img-abs" id="desk_image" src="img/@2x/oak-panel.png" alt="" title="">
                 </div>
             </form>
         </div>
